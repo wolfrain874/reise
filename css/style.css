@@ -94,12 +94,12 @@
   max-width: 1120px;
     width: 100%;
     padding: 40px 0;
-    width: 622px;
-  height: 450px;
+    width: 690px;
+  height: 480px;
   padding: 2em;
   }
   .slide-content{
-    margin: 30px 41px;
+    margin: 7% 10%;
     overflow: hidden;
     border-radius: 25px;
   }
@@ -185,11 +185,11 @@
   }
   
   .swiper-navBtn{
-    color: #6E93f7;
+    color: var(--primer_color);
     transition: color 0.3s ease;
   }
   .swiper-navBtn:hover{
-    color: #4070F4;
+    color: var(--primer_color);
   }
   .swiper-navBtn::before,
   .swiper-navBtn::after{
@@ -202,11 +202,11 @@
     left: 0;
   }
   .swiper-pagination-bullet{
-    background-color: #6E93f7;
+    background-color: var(--primer_color);
     opacity: 1;
   }
   .swiper-pagination-bullet-active{
-    background-color: #4070F4;
+    background-color: var(--primer_color);
   }
   
   @media screen and (max-width: 768px) {

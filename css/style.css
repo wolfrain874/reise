@@ -72,9 +72,9 @@
 .img__fondo{
     width: 100vw;
     height: 40vh;
-    background-image: url(https://www.dropbox.com/s/lgwbu6w9o7n8ezg/IMG_0620-3640x994.jpg?raw=1);
+    background-image: url(https://www.dropbox.com/s/82jkrdsbmr1w0zs/Puente_de_ie.jpg?raw=1);
     background-repeat: no-repeat;
-    background-image: linear-gradient(rgba(5, 7, 12, .5));
+    background-image: linear-gradient(#131606);
     background-position: center;
     background-size: cover;
 }
@@ -178,9 +178,11 @@ section{
     margin: 14px;
     cursor: pointer;
     transition: all 0.3s ease;
+    text-decoration: none;
+    
   }
   .button:hover{
-    background: #265DF2;
+    background: var(--primer_color);
   }
   
   .swiper-navBtn{
@@ -215,4 +217,35 @@ section{
     .swiper-navBtn{
       display: none;
     }
+  }
+  .slider{
+    width: 95%;
+    overflow: hidden;
+  }
+  .slider ul{
+    display: flex;
+   padding: 0;
+   width: 400%;
+   animation: cambio 20s infinite;
+   animation-direction: alternate;
+
+  }
+  .slider li{
+    width: 100%;
+    list-style: none;
+  }
+  .slider li img{
+    width: 100%;
+  }
+  @keyframes cambio{
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+
+    
   }

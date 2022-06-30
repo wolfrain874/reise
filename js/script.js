@@ -28,12 +28,13 @@ var swiper = new Swiper(".slide-content", {
     },
   });
    
-  const productos = [
-    {nombre: hotel1, valor: 1111, lugar:napoles},
-    {nombre: hotel2, valor: 1111, lugar:napoles},
-    {nombre: hotel3, valor: 1111, lugar:napoles},
-    {nombre: hotel4, valor: 1111, lugar:napoles},
+  const productos=[
+    {nombre:'medellin',valor:1111},
+    {nombre:'bogota',valor:1111},
+    {nombre:'cartagena',valor:1111},
+    {nombre:'cali',valor:1111},
   ]
+  
 
   const formulario=document.querySelector('#formulario');
   const boton=document.querySelector('#boton');

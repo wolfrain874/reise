@@ -54,11 +54,12 @@
     text-decoration: none;
     color: black;
     font-weight: 600;
-    padding: 3px;
+    padding: 10px;
+    border-radius: 20px;
 }
 
 .nav__link:hover{
-    color: aqua;
+    color: #a4c324;
 }
 
 .nav{
@@ -255,3 +256,39 @@
   display: grid;
   grid-template-columns: 50% 50%;
 }
+
+.buscador-container{
+  background: #fff;
+  padding: 10px;
+  margin-right:40px ;
+  border-radius: 20px;
+}
+
+.boton{
+  border: none;
+  font-family:sans-serif ;
+  font-weight: 600;
+  padding: 5px;
+  background: none;
+}
+
+.formulario{
+  width: 0;
+  border: none;
+  outline: none;  
+  line-height: 60px;
+  transition: 1s;
+  height: 10px;
+
+
+}
+
+@media screen AND (min-width:700px) {
+  .buscador-container:hover > .formulario{
+    width: 400px;
+  }
+  
+}
+
+
+

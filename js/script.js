@@ -29,10 +29,10 @@ var swiper = new Swiper(".slide-content", {
   });
    
   const productos=[
-    {nombre:'medellin',valor:1111},
-    {nombre:'bogota',valor:1111},
-    {nombre:'cartagena',valor:1111},
-    {nombre:'cali',valor:1111},
+    {nombre:'medellin',valor:1},
+    {nombre:'bogota',valor:2},
+    {nombre:'cartagena',valor:3},
+    {nombre:'cali',valor:4},
   ]
   
 
@@ -40,13 +40,13 @@ var swiper = new Swiper(".slide-content", {
   const boton=document.querySelector('#boton');
   const resultado = document.querySelector('#resultado');
   const filtrar=()=>{
-  //console.log(formulario.value);
+  console.log(formulario.value);
   resultado.innerHTML='';
   const texto=formulario.value.toLowerCase();
   for(let producto of productos){
     let nombre = producto.nombre.toLowerCase();
-    if(nombre.indexOf(texto) !== 1){
-      resultado.innerHTML+=`<li>${producto.nombre}</li> -valor: ${producto.valor} -lugar: ${producto.lugar}` ;
+    if(nombre.indexOf(texto) !== -1){
+      resultado.innerHTML+=`<li>${producto.nombre}</li> -valor: ${producto.valor} ` ;
 
     }
 
@@ -56,3 +56,4 @@ var swiper = new Swiper(".slide-content", {
   }
 }
 boton.addEventListener('click',filtrar)
+

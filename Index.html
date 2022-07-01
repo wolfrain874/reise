@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style2.css">
-    <link rel="stylesheet"
+    <!-- <link rel="stylesheet"
     href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
     integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMpoDgiMDm4iYMj70gZWkYb1706tws"
-    crossorigin="anonymous">
+    crossorigin="anonymous"> -->
     <link rel="icon" href="reise.png">
     <title>Reise</title>
 </head>
@@ -22,8 +22,9 @@
         </a>
         <div class="nav">
             <b class="buscador-container">
-                <input type="text" class="formulario">
-                <button class="boton">Buscar</button>
+                <input type="text" class="formulario" id="formulario">
+                <button class="boton" id="boton">Buscar</button>
+                
             </b>
             
             <a class="nav__link" href="">Guias Turisticos</a>
@@ -38,6 +39,9 @@
     </div>
     
  <section>
+    <ul id="resultado">
+        <li></li>
+    </ul>
 <div class="continer">
     <div class="slide-container swiper">
     <div class="slide-content">
@@ -204,9 +208,7 @@
     </div>
  </div>
 </div>
-<ul id="resultado">
-    <li></li>
-</ul>
+
 
 </section>
 <section >
@@ -215,6 +217,6 @@
 </body>
 <script src="js/swiper-bundle.min.js"></script>
 <script src="js/script.js"></script>
-<script src="index.vue"></script>
+
 
 </html> 

@@ -89,6 +89,7 @@
     position: relative;
     padding-top: 2em ;
     font-size: 3em;
+    color: var(--primer_color);
 }
 
 .slide-container{
